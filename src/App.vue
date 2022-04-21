@@ -7,9 +7,13 @@ import logo from './assets/sjie-logo.jpg'
     <header class="bg-white shadow">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex place-content-between">
         <div><img :src="logo" class="w-24" /></div>
-        <h1 class="text-3xl font-bold leading-tight text-gray-900 text-right place-self-end">
+        <div class="place-self-end">
+        <h3 class="text-xl text-right">PTET Code: <span class="text-bold">115C033</span>, UC Code: <span>848</span></h3>
+        <h1 class="text-3xl font-bold leading-tight text-gray-900 text-right ">
           Shravani Jhajharia Institute of Education, Singhana
         </h1>
+        </div>
+        
       </div>
     </header>
     
@@ -21,22 +25,22 @@ import logo from './assets/sjie-logo.jpg'
               <div class="flex pl-4 text-md">
                 <ul class="list-reset flex justify-between flex-1 md:flex-none place-items-end">
                   <li class="mr-2">
-                  <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+                  <router-link to="/" class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">Home</router-link>
                   </li>
                   <li class="mr-2">
-                  <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+                  <router-link to="/about" class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">About Us</router-link>
                   </li>
                   <li class="mr-2">
-                  <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="post_vue.html">POST_VUE</a>
+                  <router-link to="/staff" class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="post_vue.html">Staff</router-link>
                   </li>
                   <li class="mr-2">
-                  <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+                  <router-link to="/course" class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">Course and Available Seats</router-link>
                   </li>
                   <li class="mr-2">
-                  <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+                  <router-link to="/documents" class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">Documents</router-link>
                   </li>
                   <li class="mr-2">
-                  <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="post_vue.html">POST_VUE</a>
+                  <router-link to="/contact" class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="post_vue.html">Contact Us</router-link>
                   </li>
                 </ul>
               </div>
@@ -56,20 +60,7 @@ import logo from './assets/sjie-logo.jpg'
 					</a>
 				</div>
 				<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
-					<ul class="list-reset flex justify-center flex-1 md:flex-none items-center">
-					  <li>
-						<a class="inline-block py-2 px-3 text-white no-underline" href="#">Active</a>
-					  </li>
-					  <li>
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-3" href="#">link</a>
-					  </li>
-					  <li>
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-3" href="#">link</a>
-					  </li>
-						<li>
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-3" href="#">link</a>
-					  </li>
-					</ul>
+					<p class="text-white">Mankro Road, Singhana - 333516, Jhunjhunu, Rajasthan</p>
 				</div>
 			</div>
         
