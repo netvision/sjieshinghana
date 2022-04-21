@@ -1,8 +1,12 @@
+<script setup>
+import logo from './assets/sjie-logo.jpg'
+
+</script>
 <template>
   <div>
     <header class="bg-white shadow">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex place-content-between">
-        <div><img src="sjie-logo.jpg" class="w-24" /></div>
+        <div><img :src="logo" class="w-24" /></div>
         <h1 class="text-3xl font-bold leading-tight text-gray-900 text-right place-self-end">
           Shravani Jhajharia Institute of Education, Singhana
         </h1>
