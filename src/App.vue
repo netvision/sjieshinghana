@@ -8,7 +8,7 @@ import logo from './assets/sjie-logo.jpg'
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex place-content-between">
         <div><img :src="logo" class="w-24" /></div>
         <div class="place-self-end">
-        <h3 class="text-xl text-right">PTET Code: <span class="text-bold">115C033</span>, UC Code: <span>848</span></h3>
+        <h3 class="text-xl text-right">F.NRC/NCTE/RJ-1699/2008/62117 | PTET Code: <span class="text-bold">115C033</span> | UC Code: <span>848</span></h3>
         <h1 class="text-3xl font-bold leading-tight text-gray-900 text-right ">
           Shravani Jhajharia Institute of Education, Singhana
         </h1>

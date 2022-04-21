@@ -7,8 +7,8 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "pdfvuer": "^2.0.1",
     "vue": "^3.2.32",
-    "vue-pdf": "^4.3.0",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
