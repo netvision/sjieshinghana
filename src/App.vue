@@ -10,7 +10,7 @@ import logo from './assets/sjie-logo.jpg'
         <div class="place-self-end">
         <h3 class="text-xl text-right">F.NRC/NCTE/RJ-1699/2008/62117 | PTET Code: <span class="text-bold">115C033</span> | UC Code: <span>848</span></h3>
         <h1 class="text-3xl font-bold leading-tight text-gray-900 text-right ">
-          Shravani Jhajharia Institute of Education, Singhana
+          Sharvani Jhajharia Institute of Education, Singhana
         </h1>
         </div>
         
@@ -56,7 +56,7 @@ import logo from './assets/sjie-logo.jpg'
 			<div class="w-full mx-auto flex flex-wrap items-center">
 				<div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
 					<a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="#">
-						 <span class="text-base text-gray-200">&copy; Shravani Jhajharia Institute of Education</span>
+						 <span class="text-base text-gray-200">&copy; Sharvani Jhajharia Institute of Education</span>
 					</a>
 				</div>
 				<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
