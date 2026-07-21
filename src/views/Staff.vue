@@ -26,24 +26,24 @@
         </thead>
 
         <tbody>
-          <tr v-for="s in staff">
+          <tr v-for="s in staff" :key="`${s.Name}-${s['PAN No.']}`">
             <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
-              {{ s["Designation"] }}
+              {{ s["Staff Type"] }}
             </th>
             <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 ">
-              {{ s["Name of Teacher"] }}
+              {{ s["Name"] }}
             </td>
             <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
               {{ s["Post"] }}
             </td>
             <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-              {{ s["appointment Date"] }}
+              {{ s["Appointment Date"] }}
             </td>
             <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-              {{ s["Aadhar Number"] }}
+              {{ s["Aadhar No."] }}
             </td>
             <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-              {{ s["PAN No "] }}
+              {{ s["PAN No."] }}
             </td>
           </tr>
         </tbody>
@@ -53,185 +53,180 @@
 <script setup>
 const staff = [
  {
-  "Designation": "Principle",
-  "Name of Teacher": "Dr. NEELAM  ",
-  "PAN No ": "AHLPN6496K",
-  "Subject": "EDUCATION",
+  "Staff Type": "Principle",
+  "Name": "Dr. Pritama Devi",
   "Post": "PRINCIPAL",
-  "appointment Date": "01\/04\/2024",
-  "Aadhar Number": "4715 0464 8175"
+  "Appointment Date": "08/07/2025",
+  "Aadhar No.": "4715 0464 8175",
+  "PAN No.": "AHLPN6496K"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "BABLESH",
-  "PAN No ": "BPCNB2318F",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "AVINASH CHOUDHARY",
   "Post": "TEACHER",
-  "appointment Date": "01\/03\/2020",
-  "Aadhar Number": "9736 3478 7050"
+  "Appointment Date": "01/07/2015",
+  "Aadhar No.": "6039 6663 6596",
+  "PAN No.": "ANYPC1293N"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "NIDHI SHARMA",
-  "PAN No ": "BCDMS4543F",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "GOPI RAM",
   "Post": "TEACHER",
-  "appointment Date": "02\/08\/2020",
-  "Aadhar Number": "4776 8505 7694"
+  "Appointment Date": "01/07/2015",
+  "Aadhar No.": "6308 5013 6404",
+  "PAN No.": "AYMPR5735P"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "MAMTA KUMARI",
-  "PAN No ": "LTVPK2818L",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "KHUSHBOO",
   "Post": "TEACHER",
-  "appointment Date": "05\/12\/2020",
-  "Aadhar Number": "3818 4760 5101"
+  "Appointment Date": "01/03/2025",
+  "Aadhar No.": "5245 3489 9993",
+  "PAN No.": "BAHPD2650R"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "GOPI RAM",
-  "PAN No ": "AYMPR5735P",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "SUNITA RANI",
   "Post": "TEACHER",
-  "appointment Date": "01\/07\/2016",
-  "Aadhar Number": "6308 5013 6404"
+  "Appointment Date": "02/07/2025",
+  "Aadhar No.": "6254 5956 9245",
+  "PAN No.": "DPGPR0360E"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "RAKESH KUMAR",
-  "PAN No ": "AYMPK6253P",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "ANJU SAINI",
   "Post": "TEACHER",
-  "appointment Date": "02\/01\/2018",
-  "Aadhar Number": "2018 1123 4852"
+  "Appointment Date": "04/04/2023",
+  "Aadhar No.": "5502 3859 5458",
+  "PAN No.": "ATSPD3216G"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "SAWITREE",
-  "PAN No ": "BPTCS5698A",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "SATYENDRA SINGH",
   "Post": "TEACHER",
-  "appointment Date": "01\/03\/2020",
-  "Aadhar Number": "6268 5542 3390"
+  "Appointment Date": "30/01/2025",
+  "Aadhar No.": "3605 1851 8771",
+  "PAN No.": "ETZPS5212J"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "AVINASH CHOUDHARY",
-  "PAN No ": "ANYPC1293N",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "ANITA KUMAWAT",
   "Post": "TEACHER",
-  "appointment Date": "03\/07\/2013",
-  "Aadhar Number": "6039 6663 6596"
+  "Appointment Date": "10/07/2024",
+  "Aadhar No.": "9415 2685 6368",
+  "PAN No.": "GBIPK2723R"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "ANJU SAINI",
-  "PAN No ": "ATSPD3216G",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "AJAY KUMAR",
   "Post": "TEACHER",
-  "appointment Date": "05\/07\/2023",
-  "Aadhar Number": "5502 3859 5458"
+  "Appointment Date": "10/10/2025",
+  "Aadhar No.": "4178 8044 1043",
+  "PAN No.": "DDIPK9204E"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "MANOJ SINGH",
-  "PAN No ": "ATRPS6548A",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "PINKY CHOUDHARY",
   "Post": "TEACHER",
-  "appointment Date": "05\/07\/2020",
-  "Aadhar Number": "9914 0643 3599"
+  "Appointment Date": "13/10/2025",
+  "Aadhar No.": "8042 2979 1076",
+  "PAN No.": "BTIPC0699H"
  },
  {
-  "Designation": "Non-Teaching",
-  "Name of Teacher": "AJAY KUMAR",
-  "PAN No ": "DDIPK9204E",
-  "Subject": "NA",
-  "Post": "CLERCK",
-  "appointment Date": "02\/07\/2022",
-  "Aadhar Number": "4178 8044 1043"
- },
- {
-  "Designation": "Non-Teaching",
-  "Name of Teacher": "RAMESH KUMAR",
-  "PAN No ": "FSQPK6595D",
-  "Subject": "NA",
-  "Post": "STORE KEEPAR",
-  "appointment Date": "02\/01\/2018",
-  "Aadhar Number": "8237 5538 2067"
- },
- {
-  "Designation": "Teaching",
-  "Name of Teacher": "KUSUM LATA",
-  "PAN No ": "ALSPL6434C",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "VISHNU SAINI",
   "Post": "TEACHER",
-  "appointment Date": "02\/12\/2023",
-  "Aadhar Number": "8287 1275 4202"
+  "Appointment Date": "13/10/2025",
+  "Aadhar No.": "3888 9328 7781",
+  "PAN No.": "OXXPS4435R"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "RAJESH KUMARI",
-  "PAN No ": "GDMPK9582A",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "KIRAN CHOUDHARY",
   "Post": "TEACHER",
-  "appointment Date": "03\/07\/2023",
-  "Aadhar Number": "4339 1015 9846"
+  "Appointment Date": "13/10/2025",
+  "Aadhar No.": "8020 9896 0002",
+  "PAN No.": "CCEPC4194F"
  },
  {
-  "Designation": "Non-Teaching",
-  "Name of Teacher": "SHASHI KANT SHARMA",
-  "PAN No ": "CAQPS7921A",
-  "Subject": "NA",
-  "Post": "ACCOUNTANT",
-  "appointment Date": "02\/12\/2022",
-  "Aadhar Number": "3810 5049 8907"
- },
- {
-  "Designation": "Teaching",
-  "Name of Teacher": "SAMATA SRIVASTAV",
-  "PAN No ": "CDMPS3645F",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "MAMTA CHOUDHARY",
   "Post": "TEACHER",
-  "appointment Date": "02\/07\/2021",
-  "Aadhar Number": "8621 9901 8917"
+  "Appointment Date": "13/10/2025",
+  "Aadhar No.": "5802 4547 3496",
+  "PAN No.": "DLYPC0412C"
  },
  {
-  "Designation": "Non-Teaching",
-  "Name of Teacher": "ROSHAN",
-  "PAN No ": "NA",
-  "Subject": "NA",
-  "Post": "NA",
-  "appointment Date": "18-11-2021",
-  "Aadhar Number": "6656 1286 1863"
- },
- {
-  "Designation": "Teaching",
-  "Name of Teacher": "KHUSHBOO",
-  "PAN No ": "BAHPD2650R",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "JITENDRA SINGHBAJROLIYA",
   "Post": "TEACHER",
-  "appointment Date": "02\/12\/2023",
-  "Aadhar Number": "5245 3489 9993"
+  "Appointment Date": "13/10/2025",
+  "Aadhar No.": "6457 7930 4286",
+  "PAN No.": "ALUPB9061B"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "RAMESH CHAND AGARWAL",
-  "PAN No ": "AUVPA6895A",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "MISHRI CHANDIWAL",
   "Post": "TEACHER",
-  "appointment Date": "04\/10\/2020",
-  "Aadhar Number": "7744 5318 8718"
+  "Appointment Date": "15/01/2025",
+  "Aadhar No.": "3019 8785 9683",
+  "PAN No.": "BSEPC6015L"
  },
  {
-  "Designation": "Teaching",
-  "Name of Teacher": "NARESH KUMAR GANESH",
-  "PAN No ": "DMPGT1263M",
-  "Subject": "EDUCATION",
+  "Staff Type": "Teaching",
+  "Name": "SANIYA",
   "Post": "PHYSICAL EDUCATION TEACHER",
-  "appointment Date": "05\/05\/2015",
-  "Aadhar Number": "5888 6356 1899"
+  "Appointment Date": "01/07/2024",
+  "Aadhar No.": "2746 2958 0995",
+  "PAN No.": "EBXPS6787J"
+ },
+ {
+  "Staff Type": "Non-Teaching",
+  "Name": "VIKASH KUMAR GURAWA",
+  "Post": "LIBRARIAN",
+  "Appointment Date": "09/07/2024",
+  "Aadhar No.": "7777 6806 4064",
+  "PAN No.": "DAYPK2309M"
+ },
+ {
+  "Staff Type": "Non-Teaching",
+  "Name": "SAMATA SRIVASTAV",
+  "Post": "ACCOUNTANT",
+  "Appointment Date": "02/12/2023",
+  "Aadhar No.": "8261 9901 8917",
+  "PAN No.": "CDMPS6563F"
+ },
+ {
+  "Staff Type": "Non-Teaching",
+  "Name": "SHASHI KANT SHARMA",
+  "Post": "ACCOUNTANT",
+  "Appointment Date": "01/07/2022",
+  "Aadhar No.": "3810 5049 8907",
+  "PAN No.": "CAQPS7921A"
+ },
+ {
+  "Staff Type": "Non-Teaching",
+  "Name": "ASHISH KUMAR",
+  "Post": "LDC",
+  "Appointment Date": "03/04/2023",
+  "Aadhar No.": "4427 2412 7961",
+  "PAN No.": "KWZPK0577D"
+ },
+ {
+  "Staff Type": "Non-Teaching",
+  "Name": "KAPIL KUMAR",
+  "Post": "STORE KEEPAR",
+  "Appointment Date": "01/08/2024",
+  "Aadhar No.": "4035 8038 8917",
+  "PAN No.": "ECMPK4823B"
+ },
+ {
+  "Staff Type": "Non-Teaching",
+  "Name": "RAMESH KUMAR",
+  "Post": "PEON",
+  "Appointment Date": "14/07/2021",
+  "Aadhar No.": "8237 5538 2067",
+  "PAN No.": "FSQPK6595D"
  }
 ]
-console.log(staff[0]["Aadhar Number"])
 </script>
